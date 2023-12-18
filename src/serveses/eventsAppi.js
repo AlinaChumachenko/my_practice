@@ -7,7 +7,7 @@ export async function fetchEvents() {
   const response = await axios('events', {
     params: {
       apikey: KEY,
-      size: 20,
+      size: 25,
     },
   });
   return response.data._embedded.events;
